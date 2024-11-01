@@ -1,16 +1,23 @@
 import { useState, useEffect } from 'react';
 import './ProductSection.css';
 import product1 from '../assets/img/product/product-1.jpg';
+import product2 from '../assets/img/product/product-2.jpg';
+import product3 from '../assets/img/product/product-3.jpg';
+import product4 from '../assets/img/product/product-4.jpg';
+import product5 from '../assets/img/product/product-5.jpg';
+import product6 from '../assets/img/product/product-6.jpg';
+import product7 from '../assets/img/product/product-7.jpg';
+import product8 from '../assets/img/product/product-8.jpg';
 
 const products = [
   { id: 1, category: "Women's", name: 'Cotton T-shirt', price: 40, image: product1, label: 'New', rating: 4.5 },
-  { id: 2, category: "Men's", name: 'Denim Jacket', price: 60, image: '/assets/img/product/product-2.jpg', label: 'Sale', oldPrice: 70, rating: 4 },
-  { id: 3, category: "Kid's", name: 'Kid’s Hoodie', price: 25, image: '/assets/img/product/product-3.jpg', label: 'Out of stock', rating: 3.5 },
-  { id: 4, category: 'Accessories', name: 'Leather Belt', price: 15, image: '/assets/img/product/product-4.jpg', label: 'New', rating: 5 },
-  { id: 5, category: "Women's", name: 'Silk Scarf', price: 30, image: '/assets/img/product/product-5.jpg', label: 'Sale', oldPrice: 40, rating: 4 },
-  { id: 6, category: 'Cosmetics', name: 'Lipstick', price: 10, image: '/assets/img/product/product-6.jpg', label: 'New', rating: 4 },
-  { id: 7, category: "Men's", name: 'Sports Cap', price: 20, image: '/assets/img/product/product-7.jpg', label: 'Out of stock', rating: 4.5 },
-  { id: 8, category: "Kid's", name: 'Toy Set', price: 18, image: '/assets/img/product/product-8.jpg', label: 'New', rating: 5 },
+  { id: 2, category: "Men's", name: 'Denim Jacket', price: 60, image: product2, label: 'Sale', oldPrice: 70, rating: 4 },
+  { id: 3, category: "Kid's", name: 'Kid’s Hoodie', price: 25, image: product3, label: 'Out of stock', rating: 3.5 },
+  { id: 4, category: 'Accessories', name: 'Leather Belt', price: 15, image: product4, label: 'New', rating: 5 },
+  { id: 5, category: "Women's", name: 'Silk Scarf', price: 30, image: product5, label: 'Sale', oldPrice: 40, rating: 4 },
+  { id: 6, category: 'Cosmetics', name: 'Lipstick', price: 10, image: product6, label: 'New', rating: 4 },
+  { id: 7, category: "Men's", name: 'Sports Cap', price: 20, image: product7, label: 'Out of stock', rating: 4.5 },
+  { id: 8, category: "Kid's", name: 'Toy Set', price: 18, image: product8, label: 'New', rating: 5 },
 ];
 
 const ProductSection = () => {
