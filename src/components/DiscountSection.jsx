@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './DiscountSection.css';
+import discount from '../assets/img/discount.jpg';
 
 const DiscountSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -33,7 +34,7 @@ const DiscountSection = () => {
     <section className="discount-section">
       {/* Left Column with Image */}
       <div className="discount-image">
-        <img src="src/assets/img/discount.jpg" alt="Discount Offer" />
+        <img src={discount} alt="Discount Offer" />
       </div>
 
       {/* Right Column with Discount Details */}

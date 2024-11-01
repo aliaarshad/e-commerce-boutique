@@ -1,13 +1,20 @@
 import './InstagramGallery.css';
 import { FaInstagram } from 'react-icons/fa';
+import insta1 from '../assets/img/instagram/insta-1.jpg';
+import insta2 from '../assets/img/instagram/insta-2.jpg';
+import insta3 from '../assets/img/instagram/insta-3.jpg';
+import insta4 from '../assets/img/instagram/insta-4.jpg';
+import insta5 from '../assets/img/instagram/insta-5.jpg';
+import insta6 from '../assets/img/instagram/insta-6.jpg';
+
 
 const images = [
-  { id: 1, src: 'src/assets/img/instagram/insta-1.jpg', link: '@ashio_shop' },
-  { id: 2, src: 'src/assets/img/instagram/insta-2.jpg', link: '@ashio_shop' },
-  { id: 3, src: 'src/assets/img/instagram/insta-3.jpg', link: '@ashio_shop' },
-  { id: 4, src: 'src/assets/img/instagram/insta-4.jpg', link: '@ashio_shop' },
-  { id: 5, src: 'src/assets/img/instagram/insta-5.jpg', link: '@ashio_shop' },
-  { id: 6, src: 'src/assets/img/instagram/insta-6.jpg', link: '@ashio_shop' },
+  { id: 1, src: insta1, link: '@ashio_shop' },
+  { id: 2, src: insta2, link: '@ashio_shop' },
+  { id: 3, src: insta3, link: '@ashio_shop' },
+  { id: 4, src: insta4, link: '@ashio_shop' },
+  { id: 5, src: insta5, link: '@ashio_shop' },
+  { id: 6, src: insta6, link: '@ashio_shop' },
 ];
 
 const InstagramGallery = () => {
