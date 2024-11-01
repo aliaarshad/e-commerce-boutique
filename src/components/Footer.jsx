@@ -1,5 +1,10 @@
 import './Footer.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaPinterest } from 'react-icons/fa';
+import payment1 from '../assets/img/payment/payment-1.png';
+import payment2 from '../assets/img/payment/payment-2.png';
+import payment3 from '../assets/img/payment/payment-3.png';
+import payment4 from '../assets/img/payment/payment-4.png';
+import payment5 from '../assets/img/payment/payment-5.png';
 
 const Footer = () => {
   return (
@@ -12,11 +17,11 @@ const Footer = () => {
           Discover unique fashion, crafted with care to bring out the elegance in every individual.
         </p>
         <div className="payment-logos">
-          <img src="src/assets/img/payment/payment-1.png" alt="Payment Logo" />
-          <img src="src/assets/img/payment/payment-2.png" alt="Payment Logo" />
-          <img src="src/assets/img/payment/payment-3.png" alt="Payment Logo" />
-          <img src="src/assets/img/payment/payment-4.png" alt="Payment Logo" />
-          <img src="src/assets/img/payment/payment-5.png" alt="Payment Logo" />
+          <img src={payment1} alt="Payment Logo" />
+          <img src={payment2} alt="Payment Logo" />
+          <img src={payment3} alt="Payment Logo" />
+          <img src={payment4} alt="Payment Logo" />
+          <img src={payment5} alt="Payment Logo" />
         </div>
       </div>
 
