@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import './ProductSection.css';
 
 const products = [
-  { id: 1, category: "Women's", name: 'Cotton T-shirt', price: 40, image: '../src/assets/img/product/product-1.jpg', label: 'New', rating: 4.5 },
-  { id: 2, category: "Men's", name: 'Denim Jacket', price: 60, image: '../src/assets/img/product/product-2.jpg', label: 'Sale', oldPrice: 70, rating: 4 },
-  { id: 3, category: "Kid's", name: 'Kid’s Hoodie', price: 25, image: '../src/assets/img/product/product-3.jpg', label: 'Out of stock', rating: 3.5 },
-  { id: 4, category: 'Accessories', name: 'Leather Belt', price: 15, image: '../src/assets/img/product/product-4.jpg', label: 'New', rating: 5 },
-  { id: 5, category: "Women's", name: 'Silk Scarf', price: 30, image: '../src/assets/img/product/product-5.jpg', label: 'Sale', oldPrice: 40, rating: 4 },
-  { id: 6, category: 'Cosmetics', name: 'Lipstick', price: 10, image: '../src/assets/img/product/product-6.jpg', label: 'New', rating: 4 },
-  { id: 7, category: "Men's", name: 'Sports Cap', price: 20, image: '../src/assets/img/product/product-7.jpg', label: 'Out of stock', rating: 4.5 },
-  { id: 8, category: "Kid's", name: 'Toy Set', price: 18, image: '../src/assets/img/product/product-8.jpg', label: 'New', rating: 5 },
+  { id: 1, category: "Women's", name: 'Cotton T-shirt', price: 40, image: './src/assets/img/product/product-1.jpg', label: 'New', rating: 4.5 },
+  { id: 2, category: "Men's", name: 'Denim Jacket', price: 60, image: './src/assets/img/product/product-2.jpg', label: 'Sale', oldPrice: 70, rating: 4 },
+  { id: 3, category: "Kid's", name: 'Kid’s Hoodie', price: 25, image: './src/assets/img/product/product-3.jpg', label: 'Out of stock', rating: 3.5 },
+  { id: 4, category: 'Accessories', name: 'Leather Belt', price: 15, image: './src/assets/img/product/product-4.jpg', label: 'New', rating: 5 },
+  { id: 5, category: "Women's", name: 'Silk Scarf', price: 30, image: './src/assets/img/product/product-5.jpg', label: 'Sale', oldPrice: 40, rating: 4 },
+  { id: 6, category: 'Cosmetics', name: 'Lipstick', price: 10, image: './src/assets/img/product/product-6.jpg', label: 'New', rating: 4 },
+  { id: 7, category: "Men's", name: 'Sports Cap', price: 20, image: './src/assets/img/product/product-7.jpg', label: 'Out of stock', rating: 4.5 },
+  { id: 8, category: "Kid's", name: 'Toy Set', price: 18, image: './src/assets/img/product/product-8.jpg', label: 'New', rating: 5 },
 ];
 
 const ProductSection = () => {
