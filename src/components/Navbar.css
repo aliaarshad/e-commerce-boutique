@@ -1,0 +1,203 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-links li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Off-canvas menu */
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease-in-out;
+  z-index: 1500;
+}
+
+.offcanvas-menu.open {
+  left: 0;
+}
+
+.offcanvas-menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.offcanvas-menu li {
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Overlay for Off-canvas */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login, .register {
+  color: #000;
+}
+
+.divider {
+  padding: 0 0.5rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+}
+
+.heart, .bag {
+  position: relative;
+  cursor: pointer;
+}
+
+.bag-badge {
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.heart-badge {
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links, .header-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+    padding-top: .5rem;
+  }
+
+  .icons {
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  .offcanvas-menu ul {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  .mobile-header-right {
+    display: flex;
+    padding-left: 1.5rem;
+  }
+
+  .mobile-header-right a {
+    color: #fff;
+  }
+
+  .overlay {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .offcanvas-menu {
+    display: none;
+  }
+}
