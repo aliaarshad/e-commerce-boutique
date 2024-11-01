@@ -1,5 +1,6 @@
 import './Footer.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaPinterest } from 'react-icons/fa';
+import logo from '../assets/img/logo.png';
 import payment1 from '../assets/img/payment/payment-1.png';
 import payment2 from '../assets/img/payment/payment-2.png';
 import payment3 from '../assets/img/payment/payment-3.png';
@@ -12,7 +13,7 @@ const Footer = () => {
     <div className='footer-container'>
       {/* Column 1 - Logo and Payment Logos */}
       <div className="footer-column">
-        <img src="src/assets/img/logo.png" alt="Boutique Logo" className="footer-logo" />
+        <img src={logo} alt="Boutique Logo" className="footer-logo" />
         <p className="footer-description">
           Discover unique fashion, crafted with care to bring out the elegance in every individual.
         </p>
