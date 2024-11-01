@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import './ProductSection.css';
+import product1 from '../assets/img/product/product-1.jpg';
 
 const products = [
-  { id: 1, category: "Women's", name: 'Cotton T-shirt', price: 40, image: '/assets/img/product/product-1.jpg', label: 'New', rating: 4.5 },
+  { id: 1, category: "Women's", name: 'Cotton T-shirt', price: 40, image: product1, label: 'New', rating: 4.5 },
   { id: 2, category: "Men's", name: 'Denim Jacket', price: 60, image: '/assets/img/product/product-2.jpg', label: 'Sale', oldPrice: 70, rating: 4 },
   { id: 3, category: "Kid's", name: 'Kid’s Hoodie', price: 25, image: '/assets/img/product/product-3.jpg', label: 'Out of stock', rating: 3.5 },
   { id: 4, category: 'Accessories', name: 'Leather Belt', price: 15, image: '/assets/img/product/product-4.jpg', label: 'New', rating: 5 },
